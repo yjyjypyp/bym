@@ -1,0 +1,60 @@
+body{
+  margin: 0;
+  font-size:1em;
+  /*아래 두 줄 :
+      1) 배경에 이미지 추가하는 법
+      2) 배경 이미지가 화면에 꽉차게 설정하기)
+
+      1) background-image:url(''01_images/02.png'');
+      2) background-size: cover;
+  */
+
+  background-color: black;
+}
+
+
+h1,p {
+  margin: 0;
+}
+
+.top-icons{
+  position: fixed;
+  padding-left: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.container{
+  display: flex;
+  align-item: center;
+  justify-content: center;
+  background: black;
+}
+
+.item{
+  display: inline-block;
+  color: white;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.item-a{
+  display: flex;
+  padding-top: 15%;
+
+}
+.item-b{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.item-c{
+  padding-top: 5%;
+  padding-bottom: 15%;
+}
+
+.item-copyright{
+  font-size:0.7em;
+  padding-bottom: 2%;
+  justify-content: space-between; /*여백 나눠가지기*/
+  color: #ffffff;
+}
