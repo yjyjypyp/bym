@@ -4,42 +4,102 @@
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Interactive Web</title>
-    <link href="mainpage_style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mainpage_style.css">
+    <link rel="stylesheet" href="css/reset.css">
   </head>
 
   <body>
     <!-- 본문 시작-->
 
+    <div class="progress-bar-con">
+      <div class="progress-bar"></div>
+    </div>
+
       <div class="world">
+        <div class="stage"> <!--캐릭터랑 house(wall들)을 같이 감쌀 스테이지를 만든 것임-->
+          <div class="house"> <!--스크롤에 따라 이미지들을 감싸고 있는 house를 z축으로 이동시키도록 할 것임-->
+
+          <!-- 메인 이미지 시작-->
+            <section class="wall front-images"
+
+            <section class="wall wall-blue-rectangle">
+              <img src="blue_rectangles.png" alt="image" width=1600px height="auto" title="Between Your Memories">
+            </section>
+
+            <section class="wall wall-redblack-01">
+              <img src="redblack_circle01.png" alt="image" width=1600px height="auto" title="Between Your Memories">
+            </section>
+            <section class="wall wall-redblack-02">
+              <img src="redblack_circle02.png" alt="image" width=1600px height="auto" title="Between Your Memories">
+            </section>
+            <section class="wall wall-redblack-03">
+              <img src="redblack_circle03.png" alt="image" width=1600px height="auto" title="Between Your Memories">
+            </section>
+            <section class="wall wall-redblack-04">
+              <img src="redblack_circle04.png" alt="image" width=1600px height="auto" title="Between Your Memories">
+            </section>
+
+            <!--
+            <section class="wall wall-liver-01-red">
+              <img src="01_images/liver_01_red.png" alt="image" width=1600px height="auto" title="Between Your Memories">
+            </section>
+            <section class="wall wall-liver_01_black">
+              <img src="01_images/liver_01_black.png" alt="image" width=1600px height="auto" title="Between Your Memories">
+            </section>
+            <section class="wall wall-liver-02-red">
+              <img src="01_images/liver_02_red.png" alt="image" width=1600px height="auto" title="Between Your Memories">
+            </section>
+            <section class="wall wall-liver-02-black">
+              <img src="01_images/liver_02_black.png" alt="image" width=1600px height="auto" title="Between Your Memories">
+            </section>
+            -->
+
+            <section class="wall wall-watering">
+              <img src="watering.gif" alt="image" width=1600px height="auto" title="Between Your Memories">
+            </section>
+
+
+            <section class="wall wall-diary-circle-01">
+              <img src="for_text_circle01.png" alt="image" width=1600px height="auto" title="Between Your Memories">
+            </section>
+            <section class="wall wall-diary-circle-02">
+              <img src="for_text_circle02.png" alt="image" width=1600px height="auto" title="Between Your Memories">
+            </section>
+            <section class="wall wall-diary-circle-03">
+              <img src="for_text_circle03.png" alt="image" width=1600px height="auto" title="Between Your Memories">
+            </section>
+
+            <section class="wall wall-text-diary">
+              <img src="text_diary.png" alt="image" width=1600px height="auto" title="Between Your Memories">
+            </section>
+
+            <section class="wall wall-eye">
+              <img src="eye_01.png" alt="image" width=1600px height="auto" title="Between Your Memories">
+            </section>
+
+            </section>
+
+          </div>
+        </div>
+
+
         <!-- 상단 아이콘 시작-->
           <div class="top-icons">
             <a href="page01.html">
-              <img src="01_images/00_thumbnail.png" alt="about work" width="60px" height="60px" title="about Work">
+              <img src="00_thumbnail.png" alt="about work" width="50px" height="50px" title="about Work">
             </a>
           </div>
-          
-        <div class="stage">
-          <!-- 메인 이미지 시작-->
-          <section class="front-images"
-            <div class="Between Your Memories">
-              <img src="01_images/01_work_01.png" alt="image" width=1600px height="auto" title="Between Your Memoires">
-            </div>
-          </section>
-        </div>
+
       </div>
 
-    <!--
-    <div class="container"></div>
-    <img src="01_images/01_work_01.png" alt="places for work" width="1520px" height="855px" title="place for work">
-    -->
-
-
-    <!-- 저작권 표-->
+    <!-- 저작권 표
     <div class="item item-copyright">
       <p class="text copyright">
         ⓒ 2020. CHOI Ye jin All rights reserved.
       </p>
     </div>
+    -->
 
+    <script src="js/yj_wall3d.js"></script>
   </body>
 </html>
