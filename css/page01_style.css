@@ -1,0 +1,107 @@
+body{
+  margin: 0;
+  background: #800000;
+}
+
+h1, p {
+  margin: 0;
+}
+
+.top-icons{
+  display: flex;
+  width: 100vw;
+  position: absolute; /*fixed 로 쓰면 고정되어서 스크롤 해도 그 자리에 떠 있6*/
+  padding-left: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.container {
+  height: 300vh; /*viewport height*/
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15%;
+  magin-left: auto;
+  margin-right: auto;
+
+  /*justify-content: center;*/
+}
+.language {
+  padding-top: 2%;
+  padding-left: 80%;
+  padding-right: 5%;
+}
+
+a:link {
+  color: #ffffff;
+}/*unvisited link*/
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: red;
+  }
+
+
+/*----------------------------------------
+----------------제목/부제--------------*/
+.title {
+
+  margin-left: 8%;
+  margin-right: auto;
+
+  line-height: 190%;
+}
+
+
+.main-title {
+  font-size: 28px;
+  font-weight: bolder;
+  color: white;
+}
+
+.sub-title {
+  font-size: 18px;
+  color: white;
+}
+
+/*--------------개별 이미지들--------------*/
+.image {
+  padding-top: 7%;
+  padding-bottom: 7%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/*--------------본문 글--------------*/
+.passage {
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: justify; /* 텍스트 좌우 정렬 */
+  color: rgba(255, 220, 220, 85%);
+}
+.item-passageA {
+  font-size: 17px;
+  line-height: 130%; /* 행간 조절 px / % 등으로 설정 가능 */
+}
+.item-passageB {
+  font-size: 15px;
+  line-height: 160%;
+}
+
+/*--------------저작권 표기--------------*/
+.item-copyright{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2%;
+  justify-content: space-between; /*여백 나눠가지기*/
+  font-size:11px;
+  color: #000000;
+}

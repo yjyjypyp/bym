@@ -3,6 +3,7 @@ body {
   margin: 0;
   font-size:1em;
   background: black;
+  -webkit-overflow-scrolling: touch;
 }
 h1,p {
   margin: 0;
@@ -40,7 +41,7 @@ h1,p {
   transform-style: preserve-3d;
   width: 100vw;
   height: 100vh;
-  transform: translateZ(-1500vw);
+
   /*
   width&height
   => 화면에 front-image가 viewport에 꽉 찬 상태를 default로 잡고
@@ -50,12 +51,44 @@ h1,p {
 
 .wall {
   position: absolute; /* wall이 붙은 이미지 들어있는 div들을 다 포개주기*/
+  /*
   width: 100vw;
   height: 100vh;
+  */
+
+  min-width: 20%;
+  max-height: 100%;
+  opacity: 0.95;
+  /*위에 3줄은 젠틀몬스터 참고*/
+
+  display: flex;
+  align-items; center;
   justify-content: center;
-  align-items: center;
+
 }
 
+.wall-black-01 {
+  opacity: 1;
+}
+.wall-black-02 {
+  opacity: 1;
+}
+.wall-black-03 {
+  opacity: 1;
+}
+.wall-black-04 {
+  opacity: 1;
+}
+.wall-black-05 {
+  opacity: 1;
+}
+.wall-black-06 {
+  opacity: 1;
+}
+
+
+
+/*
 .wall-eye { transform: translateZ(1500vw); }
 .wall-text-diary { transform: translateZ(900vw); }
 .wall-diary-circle-01 { transform: translateZ(970vw); }
@@ -75,10 +108,11 @@ h1,p {
 .wall-redblack-03 { transform: translateZ(630vw); }
 .wall-redblack-04 { transform: translateZ(650vw); }
 .wall-blue-rectangle { transform: translateZ(600vw); }
+*/
 
 .top-icons{
   position: fixed;
-  padding-left: 2%;
+  padding-left: 3%;
   padding-top: 2%;
   padding-bottom: 2%;
 }
@@ -108,7 +142,7 @@ h1,p {
   z-index: 100; /*z 값에 밀려서 이거 없으면 현 프로젝트에서는 다른 z값 에 밀려 안보임. 그래서 앞으로 가져와준 것.*/
   width: 100vw;
   height: 3px;
-  background: #555;
+  background: #5555;
 }
 
 .progress-bar {
