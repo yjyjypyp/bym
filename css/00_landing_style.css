@@ -1,0 +1,142 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, p{
+  margin: 0;
+}
+
+.background {
+  background: #060B17;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./image/01_bym_image/015.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /*viewport height*/
+  padding-top: 0%;
+  /*padding-bottom: 10%;*/
+  font-family: 'futura';
+}
+
+/*-------------- 안내 부분 --------------*/
+.container-information {
+  margin-top: 20vh;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  display: block;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #800000;
+}
+
+.detail {
+  padding-top: 40px;
+  font-size: 20px;
+  font-weight: normal;
+  color: #800000;
+}
+
+/*-------------- 링크 부분 --------------*/
+.container-links {
+  height: 300px;
+  padding-top: 70px;
+  /*padding-left: 50%;*/
+
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: center;
+  /*border: 1px solid red;*/
+}
+
+
+.screen {
+  display: flex; /*정렬을 위한 컨테이너*/
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+
+  /*border: 1px solid blue;*/
+}
+
+.bym {
+  display: inline-block;
+  margin: 5px;
+  /*border: 1px solid red;*/
+}
+
+.homepage {
+  display: inline-block;
+  margin: 5px;
+  /*border: 1px solid red;*/
+}
+
+.img-icon {
+  position: relative;
+  display: block;
+  text-align: center;
+  justify-content: space-between;
+}
+
+a:link {
+  color: #6800A0;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:visited {
+  color: #6800A0;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:hover {
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: underline;
+  opacity: 80%;
+}
+
+/*--------------BOTTOM--------------*/
+.BOTTOM {
+  height: 300px;
+  position : relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content:flex-end;
+  /*border: 1px solid red;*/
+}
+
+/*--------------저작권 표기--------------*/
+.item-copyright{
+  display: inline-block;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2em;
+  */
+  font-family: 'futura';
+  color: #800000;
+  padding-bottom: 25px;
+
+  /*border: 1px solid red;*/
+}
