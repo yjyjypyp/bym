@@ -1,0 +1,162 @@
+body {
+  height: 500vw;
+  margin: 0;
+  font-size:1em;
+  font-family: 'futura';
+  background: black;
+  -webkit-overflow-scrolling: touch;
+}
+h1,p {
+  margin: 0;
+}
+
+.world {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  perspective: 1000px;
+}
+
+.stage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transform-style: preserve-3d;
+  /*
+  world 안에 또 여러개가 있기 때문에, world로 3d화 시켜준 것 만으로는 안에 다른 div/sections 들에
+  3d효과가 먹히지 않음
+  => 중간에 위치한 stage에 한 번 더 3d 효과를 입력시켜줘서 연결시켜준다고 이해하면 됨.
+
+  & preserve-3d 자체가 인터넷 익스플로어 에서는 안됨.
+  web-kit 기반 브라우저에서만 가능(파이어 폭스도 되긴하지만 좀 달라서 미세한 조정 필요)
+  web-kit 기반 브라우저 : 크롬 & 모바일 기기 브라우저들 & safari
+  */
+}
+
+.house {
+  transform-style: preserve-3d;
+  width: 100vw;
+  height: 100vh;
+
+  /*
+  width&height
+  => 화면에 front-image가 viewport에 꽉 찬 상태를 default로 잡고
+  z축 이동에 따라 축소가 되게끔 표현할 것임.
+  */
+}
+
+.wall {
+  position: absolute; /* wall이 붙은 이미지 들어있는 div들을 다 포개주기*/
+  /*
+  width: 100vw;
+  height: 100vh;
+  */
+
+  min-width: 20%;
+  max-height: 100%;
+  opacity: 0.95;
+  /*위에 3줄은 젠틀몬스터 참고*/
+
+  display: flex;
+  align-items; center;
+  justify-content: center;
+
+}
+
+.wall-black-01 {
+  opacity: 1;
+}
+.wall-black-02 {
+  opacity: 1;
+}
+.wall-black-03 {
+  opacity: 1;
+}
+.wall-black-04 {
+  opacity: 1;
+}
+.wall-black-05 {
+  opacity: 1;
+}
+.wall-black-06 {
+  opacity: 1;
+}
+
+
+
+/*
+.wall-eye { transform: translateZ(1500vw); }
+.wall-text-diary { transform: translateZ(900vw); }
+.wall-diary-circle-01 { transform: translateZ(970vw); }
+.wall-diary-circle-02 { transform: translateZ(950vw); }
+.wall-diary-circle-03 { transform: translateZ(920vw); }
+
+.wall-watering { transform: translateZ(890vw); }
+
+.wall-liver-01-red { transform: translateZ(800vw); }
+.wall-liver-01-black { transform: translateZ(790vw); }
+.wall-liver-02-red { transform: translateZ(780vw); }
+.wall-liver-02-black { transform: translateZ(770vw); }
+
+
+.wall-redblack-01 { transform: translateZ(650vw); }
+.wall-redblack-02 { transform: translateZ(640vw); }
+.wall-redblack-03 { transform: translateZ(630vw); }
+.wall-redblack-04 { transform: translateZ(650vw); }
+.wall-blue-rectangle { transform: translateZ(600vw); }
+*/
+
+.top-icons{
+  position: fixed;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/*
+.container {
+  display: inline-block;
+  flex-wrap: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.Between Your Memories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+*/
+
+.progress-bar-con {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100; /*z 값에 밀려서 이거 없으면 현 프로젝트에서는 다른 z값 에 밀려 안보임. 그래서 앞으로 가져와준 것.*/
+  width: 100vw;
+  height: 3px;
+  background: #5555;
+}
+
+.progress-bar {
+  width: 0; /*바의 초기값 설정 => 스크롤 안했을 때의 값 0. 이부분도 js 파일의 scroll이벤트 안에서 처리함*/
+  height: 3px;
+  background: #800000;
+}
+
+.item-copyright{
+  font-size:0.7em;
+  align: center;
+  align-items: center;
+  justify-content: space-between; /*여백 나눠가지기*/
+  padding-bottom: 2%;
+  color: rgba(255, 255, 255, 55%);
+}
