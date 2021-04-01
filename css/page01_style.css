@@ -11,14 +11,44 @@ h1, p {
 
 .top-icons{
   display: flex;
-  width: 100vw;
   position: absolute; /*fixed 로 쓰면 고정되어서 스크롤 해도 그 자리에 떠 있6*/
-  padding-left: 3%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-left: 50px;
+  padding-top: 50px;
+  /*border: 1px solid red;*/
+}
+.container-links {
+  height: auto;
+  /*padding-left: 50%;*/
+  position: absolute;
+  margin-right: 50px;
+  margin-top: 60px;
+  margin-left: -6px;
+  display: inline-block;
+
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  /*border: 1px solid red;*/
+}
+
+
+.screen {
+  display: block; /*정렬을 위한 컨테이너*/
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 3px;
+  font-family: "futura";
+  line-height: 18px;
+
+  /*border: 1px solid blue;*/
 }
 .container {
-  height: 300vh; /*viewport height*/
+  height: auto; /*viewport height*/
   max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
@@ -33,6 +63,36 @@ h1, p {
 
   /*justify-content: center;*/
 }
+
+.body-image-gif{
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2%;
+  justify-content: space-between;
+}
+
+.body-image {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2%;
+  justify-content: space-between;
+}
+
+.scenes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.scenes-img {
+  width: 400px;
+  height: auto;
+}
+
 .language {
   padding-top: 2%;
   padding-left: 80%;
@@ -67,13 +127,13 @@ a:active {
 .main-title {
   font-size: 28px;
   font-weight: bolder;
-  color: white;
+  color: #000000;
   font-family: 'futura';
 }
 
 .sub-title {
   font-size: 18px;
-  color: white;
+  color: #000000;
   font-family: 'futura';
 }
 
@@ -90,7 +150,7 @@ a:active {
   padding-left: 10%;
   padding-right: 10%;
   text-align: justify; /* 텍스트 좌우 정렬 */
-  color: rgba(255, 220, 220, 85%);
+  color: rgba(0, 0, 0, 85%);
   font-family: 'futura';
 }
 .item-passageA {
@@ -102,14 +162,62 @@ a:active {
   line-height: 160%;
 }
 
+//*--------------BOTTOM--------------*/
+.BOTTOM {
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  font-family: 'futura';
+}
+
+/*--------------home으로 돌아가기--------------*/
+.item-backtohome{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
 /*--------------저작권 표기--------------*/
 .item-copyright{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 2%;
-  justify-content: space-between; /*여백 나눠가지기*/
-  font-size:11px;
+  color: #800000;
+  font-size: 0.8em;
+  margin-bottom: 50px;
+}
+
+p2 {
   color: #000000;
+  font-size: 12px;
+}
+
+p4 {
+  color: #000000;
+  font-size: 12px;
+}
+
+p3 {
+  color: #000000;
+  font-size: 20px;
   font-family: 'futura';
+  font-weight: bold;
+}
+
+a:link {
+  color: #000000;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #000000;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #8632E6;
+  background-color: transparent;
+  text-decoration: underline;
 }
