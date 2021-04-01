@@ -85,11 +85,11 @@ h1, p {
 .scenes {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 15px;
+  grid-gap: 10px;
 }
 
 .scenes-img {
-  width: 400px;
+  width: 490px;
   height: auto;
 }
 
