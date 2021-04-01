@@ -6,6 +6,7 @@ body{
 
 h1, p {
   margin: 0;
+  font-family: 'futura';
 }
 
 .top-icons{
@@ -28,6 +29,7 @@ h1, p {
   padding-top: 15%;
   magin-left: auto;
   margin-right: auto;
+  font-family: 'futura';
 
   /*justify-content: center;*/
 }
@@ -58,6 +60,7 @@ a:active {
   margin-right: auto;
 
   line-height: 190%;
+  font-family: 'futura';
 }
 
 
@@ -65,11 +68,13 @@ a:active {
   font-size: 28px;
   font-weight: bolder;
   color: white;
+  font-family: 'futura';
 }
 
 .sub-title {
   font-size: 18px;
   color: white;
+  font-family: 'futura';
 }
 
 /*--------------개별 이미지들--------------*/
@@ -86,6 +91,7 @@ a:active {
   padding-right: 10%;
   text-align: justify; /* 텍스트 좌우 정렬 */
   color: rgba(255, 220, 220, 85%);
+  font-family: 'futura';
 }
 .item-passageA {
   font-size: 17px;
@@ -105,4 +111,5 @@ a:active {
   justify-content: space-between; /*여백 나눠가지기*/
   font-size:11px;
   color: #000000;
+  font-family: 'futura';
 }
